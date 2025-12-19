@@ -80,6 +80,7 @@ message AllocatedDeviceStatus {
   // +listMapKey=type
   // +k8s:listType=map
   // +k8s:listMapKey=type
+  // +k8s:maxItems=8
   repeated .k8s.io.apimachinery.pkg.apis.meta.v1.Condition conditions = 4;
 
   // Data contains arbitrary driver-specific data.
